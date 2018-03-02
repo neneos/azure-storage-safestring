@@ -1,6 +1,6 @@
 {
   "name": "neneos-azure-storage-safestring",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate strings safe to use in azure storage",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,7 @@
     "url": "https://github.com/neneos/azure-storage-safestring/issues"
   },
   "homepage": "https://github.com/neneos/azure-storage-safestring#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^22.4.2"
   }
