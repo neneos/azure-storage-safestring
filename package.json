@@ -1,5 +1,5 @@
 {
-  "name": "azure-storage-safestring",
+  "name": "neneos-azure-storage-safestring",
   "version": "0.0.1",
   "description": "Generate strings safe to use in azure storage",
   "main": "index.js",

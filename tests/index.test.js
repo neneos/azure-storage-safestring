@@ -1,12 +1,16 @@
 const cleaner = require('../index');
 
-test('cleans crême brûléè to march creme-brulee', () => {
+test('cleans crême brûléè to match creme-brulee', () => {
   expect(cleaner.cleanBlobName('crême brûléè')).
     toBe('creme-brulee');
 });
 
+test('cleans crême-bruléé.jpg to match creme-brulee.jpg', () => {
+  expect(cleaner.cleanBlobName('crême-bruléé.jpg')).
+    toBe('creme-brulee.jpg');
+});
 
-test('cleans apple\\pie to march apple/pie', () => {
+test('cleans apple\\pie to match apple/pie', () => {
   expect(cleaner.cleanBlobName('apple\\pie')).
     toBe('apple/pie');
 });
