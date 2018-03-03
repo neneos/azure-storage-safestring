@@ -1,7 +1,7 @@
 # neneos-azure-storage-safestring
 A npm package to generate strings safe to use in azure storage
 
-## how to use
+## how to install
 npm install neneos-azure-storage-safestring
 
 ## usage
