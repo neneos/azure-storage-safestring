@@ -2,7 +2,10 @@
 const diacritics = require('./diacritics');
 
 module.exports = {
-    cleanBlobName: function (st) {
+    removeDiacritics: (st) => {
+        return diacritics.clean(st);
+    },
+    cleanBlobName: (st) => {
         if (st.length < 1)
             throw Error('String must be longer than 1 character');
 
@@ -10,7 +13,6 @@ module.exports = {
             .split(' ').join('-')
             .split('\\').join('/'))
             .split('%2F').join('/');
-
 
         if (st.length > 1024)
             throw Error('String must be shorter than 1025 character');

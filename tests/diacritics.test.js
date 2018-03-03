@@ -1,22 +1,22 @@
 const cleaner = require('../diacritics');
 
-test("Cleans aAáÁâÂàÀäÂ  to aAaAaAaAaA", () => {
+test("Cleans aAáÁâÂàÀäÂ to aAaAaAaAaA", () => {
   expect(cleaner.clean("aAáÁâÂàÀäÂ")).toBe('aAaAaAaAaA');
 });
 
-test("Cleans eEéÉêÊèÈëË  to eEeEeEeEeE", () => {
+test("Cleans eEéÉêÊèÈëË to eEeEeEeEeE", () => {
   expect(cleaner.clean("eEéÉêÊèÈëÊ")).toBe('eEeEeEeEeE');
 });
 
-test("Cleans oOóÓôÔòÒöÖ  to oOoOoOoO", () => {
+test("Cleans oOóÓôÔòÒöÖ to oOoOoOoO", () => {
   expect(cleaner.clean("oOóÓôÔòÒöÖ")).toBe('oOoOoOoOoO');
 });
 
-test("Cleans iIíÍîÎìÌïÏ  to iIiIiIiI", () => {
+test("Cleans iIíÍîÎìÌïÏ to iIiIiIiI", () => {
   expect(cleaner.clean("iIíÍîÎìÌïÏ")).toBe('iIiIiIiIiI');
 });
 
-test("Cleans uUúÚûÛùÙüÜ  to uUuUuUuU", () => {
+test("Cleans uUúÚûÛùÙüÜ to uUuUuUuU", () => {
   expect(cleaner.clean("uUúÚûÛùÙüÜ")).toBe('uUuUuUuUuU');
 });
 
